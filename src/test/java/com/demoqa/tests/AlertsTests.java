@@ -34,7 +34,6 @@ public class AlertsTests extends TestBase{
     public void clickButtonConfirmBoxWillAppear() {
         new AlertsPage(driver).clickButtonConfirmBoxWillAppear()
                 .assertMessageConfirmResult("Ok");
-
     }
 
 
