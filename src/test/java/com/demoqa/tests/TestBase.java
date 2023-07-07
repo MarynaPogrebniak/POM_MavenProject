@@ -17,7 +17,6 @@ public class TestBase {
         driver.get("https://demoqa.com");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
     }
 
     @AfterMethod(enabled = false)
