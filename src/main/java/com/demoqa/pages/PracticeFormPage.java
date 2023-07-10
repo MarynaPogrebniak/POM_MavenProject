@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class PracticeFormPage extends BasePage{
 
@@ -181,5 +182,13 @@ public class PracticeFormPage extends BasePage{
         actions.moveByOffset(-offSetX, -offSetY).click().perform();
 
 
+    }
+
+    @FindBy(id = "example-modal-sizes-title-lg")
+    WebElement submitMessage;
+
+    public PracticeFormPage submitMessageConfirmResult(String message) {
+        Assert.assertTrue(submitMessage.getText().contains(message));
+        return this;
     }
 }

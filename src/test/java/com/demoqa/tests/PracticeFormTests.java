@@ -49,6 +49,6 @@ public class PracticeFormTests extends TestBase{
                 .selectCity(StudentData.CITY)
                 .submit()
         ;
-        new AlertsPage(driver).submitMessageConfirmResult("Thanks for submitting the form");
+        new PracticeFormPage(driver).submitMessageConfirmResult("Thanks for submitting the form");
     }
 }

@@ -69,11 +69,5 @@ public class AlertsPage extends BasePage{
         return this;
     }
 
-    @FindBy(id = "example-modal-sizes-title-lg")
-    WebElement submitMessage;
 
-    public AlertsPage submitMessageConfirmResult(String message) {
-        Assert.assertTrue(submitMessage.getText().contains(message));
-        return this;
-    }
 }
