@@ -45,4 +45,21 @@ public class SidePanel extends BasePage {
         clickWithJSExecutor(practiceForm, 0, 100);
         return new PracticeFormPage(driver);
     }
+
+
+    @FindBy(xpath = "//span[.='Links']")
+    WebElement links;
+    public LinksPage selectLinks() {
+
+        clickWithJSExecutor(links, 0, 600);
+        return new LinksPage(driver);
+    }
+
+    @FindBy(xpath = "//span[.='Broken Links - Images']")
+    WebElement brokenLinks;
+    public BrokenLinksImages selectBrokenLinksImages() {
+
+        clickWithJSExecutor(brokenLinks, 0, 600);
+        return new BrokenLinksImages(driver);
+    }
 }
